@@ -62,7 +62,11 @@ class CryptoWallet extends StatelessWidget {
                                 style: TextStyle(
                                     fontSize: 13.0,
                                     fontWeight: FontWeight.normal)),
-                            Text("+ \$$percentage")
+                            Text("+ \$$percentage",
+                                style: TextStyle(
+                                  fontSize: 14.0,
+                                  color: Colors.red[500],
+                                ))
                           ],
                         )
                       ],
@@ -182,7 +186,6 @@ class CryptoWallet extends StatelessWidget {
               bottom: MediaQuery.of(context).size.height * .37,
               left: MediaQuery.of(context).size.width * .05,
               child: RaisedButton(
-                  // padding: EdgeInsets.all(20),
                   padding: EdgeInsets.symmetric(
                     vertical: 18.0,
                     horizontal: 38.0,
@@ -227,7 +230,7 @@ class CryptoWallet extends StatelessWidget {
               child: RaisedButton(
                   padding: EdgeInsets.symmetric(
                     vertical: 18.0,
-                    horizontal: 38.0,
+                    horizontal: 34.0,
                   ),
                   color: Color(0xFFEE112D),
                   onPressed: () {},
